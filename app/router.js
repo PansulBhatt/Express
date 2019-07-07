@@ -13,5 +13,6 @@ function peopleLikeYou(req, res) {
 }
 
 router.get('/people-like-you', peopleLikeYou);
+router.get('', (req, res) => { res.status(200).send('Kindly visit : https://sleepy-dawn-97586.herokuapp.com/people-like-you?age=95&p=12&experienced=true&name=thor') });
 
 module.exports = router;
