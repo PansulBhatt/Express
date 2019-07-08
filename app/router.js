@@ -1,6 +1,6 @@
 import express from 'express';
 import { UserController } from './user/controller';
-let router = new express.Router();
+const router = new express.Router();
 
 function peopleLikeYou(req, res) {
     const controller = new UserController(global.data);

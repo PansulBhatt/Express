@@ -15,7 +15,7 @@ export const readCsvFile = (fileName = "app/db/data.csv") => {
             .on('data', (row) => {
                 rowData.push(row);
             })
-            .on('end', (resp) => {
+            .on('end', () => {
                 console.log('CSV file successfully processed');
                 resolve(rowData);
             });

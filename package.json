@@ -26,7 +26,8 @@
     "percentile": "^1.2.2"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1",
-    "braces": ">=2.3.1"
+    "braces": ">=2.3.1",
+    "eslint": "^6.0.1",
+    "nodemon": "^1.19.1"
   }
 }

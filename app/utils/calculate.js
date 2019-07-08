@@ -35,11 +35,11 @@ export const calculateStringDifference = (queryVal, personVal) => {
      * This can be accomplished by computing the set difference of the 2 values and the length difference
      * and then by using the two values to compute the percentage difference.
      */
-    let lengthA = queryVal.length,
-        lengthB = personVal.length,
-        computeString = 100 * Math.min(lengthA, lengthB) / Math.max(lengthA, lengthB);
-    let personSet = new Set(personVal);
-    let intersection = new Set(queryVal.split('').filter(x => personSet.has(x)));
+    const lengthA = queryVal.length,
+        lengthB = personVal.length;
+    let computeString = 100 * Math.min(lengthA, lengthB) / Math.max(lengthA, lengthB);
+    const personSet = new Set(personVal);
+    const intersection = new Set(queryVal.split('').filter(x => personSet.has(x)));
     computeString = computeString * [...intersection].length / queryVal.length;
     return computeString / 100;
 }
